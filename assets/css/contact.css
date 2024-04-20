@@ -114,6 +114,7 @@ li.begin-group::before {
 
 .right-side .lang:hover > .lang-options {
     display: inline-block;
+    z-index: 1;
 }
 
 .right-side .lang .flag {
