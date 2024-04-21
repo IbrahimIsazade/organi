@@ -471,3 +471,17 @@ footer .socials .icon:hover {
 }
 
 /* FOOTER END */
+
+
+/* COPYRIGHT START */
+.copyright {
+    background-color: #F3F6FA;
+}
+
+.copyright .payment{ 
+    width: 300px;
+    height: 80%;
+    margin-right: 50px;
+}
+/* COPYRIGHT END */
+
