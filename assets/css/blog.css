@@ -1,0 +1,285 @@
+@import url(./../css/style.css);
+a {
+  color: black;
+}
+
+* {
+  font-family: "Cairo", sans-serif;
+}
+
+.iconize::after,
+.iconize::before {
+  font-family: "Font Awesome 5 Free";
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-weight: 900;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-evenly {
+  justify-content: space-evenly;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 1170px;
+  margin: auto;
+  justify-content: space-between;
+}
+.container .dropdown {
+  background-color: #7fad39;
+  font-weight: 800;
+  color: #ffffff;
+  width: 245px;
+  height: 45px;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.container .navigation {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.container .navigation li {
+  padding: 20px 30px;
+}
+.container .navigation li a {
+  transition: all 0.2s;
+}
+.container .navigation li a:hover {
+  color: #7fad39;
+}
+.container .item-price {
+  font-weight: 800;
+  margin: 0;
+}
+
+.header-top {
+  background-color: rgb(245, 245, 245);
+  align-items: center;
+  font-family: "Cairo", sans-serif;
+}
+.header-top .left-side {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+.header-top .left-side > li {
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+.header-top .left-side > li > i {
+  margin-right: 10px;
+}
+
+li.begin-group {
+  display: flex;
+  align-items: center;
+}
+li.begin-group::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background-color: #cdcdcd;
+  margin: 0px 15px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+.right-side .icon {
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+}
+.right-side .last {
+  margin-right: -15px;
+}
+.right-side .lang {
+  position: relative;
+}
+.right-side .lang:hover > .lang-options {
+  display: inline-block;
+  z-index: 1;
+}
+.right-side .lang .flag {
+  width: 25px;
+  height: 14.25px;
+  border-radius: 2px;
+}
+.right-side .lang .lang-options {
+  position: absolute;
+  padding: 0px 10px;
+  top: 32px;
+  left: 35px;
+  background-color: rgb(97, 97, 97);
+  border-radius: 3px;
+  color: #cdcdcd;
+  display: none;
+}
+.right-side .lang::after {
+  content: "\f078";
+}
+.right-side .login .fa {
+  margin-right: 10px;
+}
+
+/* ROW 2 START */
+.navbar li.active a {
+  color: #7fad39;
+}
+
+.header-cart li.last {
+  margin-right: 10px;
+}
+.header-cart a {
+  display: inline-block;
+  padding: 8px;
+  position: relative;
+}
+.header-cart a span {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  background-color: #7fad39;
+  color: #ffffff;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  font-size: 12px;
+  right: 0;
+  top: 6px;
+}
+
+/* ROW 2 END */
+/* ROW 3 START */
+.search {
+  border: solid 1px gainsboro;
+}
+.search .dropdown-search {
+  background-color: #ffffff;
+  font-weight: 800;
+  color: black;
+  width: 165px;
+  height: 45px;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+}
+.search .dropdown-search:focus {
+  outline: none;
+}
+.search input[type=text] {
+  border: none;
+  height: 50px;
+  width: 300px;
+  padding-left: 10px;
+}
+.search input[type=button] {
+  border: none;
+  background-color: #7fad39;
+  height: 50px;
+  width: 110px;
+  padding-left: 10px;
+  font-weight: 800;
+  color: #ffffff;
+}
+.search input:focus {
+  outline: none;
+}
+
+.begin-group::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background-color: #cdcdcd;
+  margin: 10px 15px 0px 15px;
+}
+
+.contact-info i {
+  background-color: #f5f5f5;
+  width: 50px;
+  height: 50px;
+  color: #7fad39;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 17px;
+}
+.contact-info i .info {
+  margin-left: 20px;
+}
+.contact-info i .info p {
+  margin: 0;
+}
+.contact-info i .info .phone {
+  font-weight: 900;
+}
+.contact-info i .info .support {
+  color: #6f6f6f;
+}
+
+/* ROW 3 END */
+/* MAIN START */
+.main {
+  margin-top: 20px;
+}
+.main .page-info {
+  width: 100%;
+  height: 180px;
+  background-image: url(https://themewagon.github.io/ogani/img/breadcrumb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: #ffffff;
+}
+.main .page-info h2 {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 0;
+}
+.main .page-info .other {
+  margin-top: -20px;
+}
+.main .page-info .other a {
+  color: #ffffff;
+  font-weight: 900;
+}/*# sourceMappingURL=blog.css.map */
